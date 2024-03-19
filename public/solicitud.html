@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="MESA GRANDE" content="MESA GRANDE">
+    <title>MESA GRANDE</title>
+    <link rel="icon" type="image/x-icon" href="/file/LMG.jpg">
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/solicitud.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <a href="#" class="logo">Mesa Grande<span class="animate" style="--i:1;"></span></a>
+
+        <div id="menu-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2 4H18C19.104 4 20 3.105 20 2C20 0.895 19.105 0 18 0H2C0.895 0 0 0.895 0 2C0 3.105 0.895 4 2 4ZM18 8H2C0.895 8 0 8.895 0 10C0 11.105 0.895 12 2 12H18C19.104 12 20 11.105 20 10C20 8.895 19.105 8 18 8ZM18 16H2C0.895 16 0 16.895 0 18C0 19.105 0.895 20 2 20H18C19.104 20 20 19.105 20 18C20 16.895 19.105 16 18 16Z"
+                    fill="#EDEDED" />
+            </svg>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="#solicitudes">Solicitud laboral</a>
+            <a href="#about" id="miBoton">Atención al cliente</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+    <!--PRESTACIONES-->
+    <section class="prestaciones" id="prestaciones">
+        <h2 class="about-text">Prestaciones <span>Sociales</span></h2>
+
+        <div class="prestaciones-contenido">
+            <div class="pe-renglon">
+                <p>Vacaciones</p>
+                <img src="/file/vacaciones.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Aguinaldo</p>
+                <img src="/file/calendario.png" alt="">
+            </div>
+            <div class="pe-renglon">
+
+                <p>Dia festivo</p>
+                <img src="/file/festivo.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Trasporte</p>
+                <img src="/file/bus.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Seguro</p>
+                <img src="/file/seguro.png" alt="">
+            </div>
+        </div>
+
+        <div class="prestaciones-contenido">
+            <div class="pe-renglon">
+                <p>Horarios</p>
+                <img src="/file/clock.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Paternidad</p>
+                <img src="/file/family.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Matrimonio</p>
+                <img src="/file/boda.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Permisos</p>
+                <img src="/file/permiso.png" alt="">
+            </div>
+            <div class="pe-renglon">
+                <p>Fallecimientos</p>
+                <img src="/file/fallecimiento.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Solicitudes-->
+    <section class="solicitudes" id="solicitudes">
+        <div class="container">
+            <h2>Solicitud laboral</h2>
+<<<<<<< HEAD
+            <form id="form-solicitud">
+=======
+            <form action="#" method="POST">
+>>>>>>> 064e65f05d298aeca9588867a140d5810b6f8d6d
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="input-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="input-group">
+                    <label for="experiencia">Experiencia Laboral:</label>
+                    <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="educacion">Educación:</label>
+                    <textarea id="educacion" name="educacion" rows="4" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="habilidades">Habilidades y Competencias:</label>
+                    <textarea id="habilidades" name="habilidades" rows="4" required></textarea>
+                </div>
+                <div class="radio-group">
+                    <label>¿Que proyecto te interesa?</label>
+                    <input type="radio" id="siExperiencia" name="proyecto" value="calvillo">
+                    <label for="siExperiencia">Mesa Grande Calvillo</label>
+    
+                    <input type="radio" id="noExperiencia" name="proyecto" value="california">
+                    <label for="noExperiencia">Mesa Grande Ejido California</label>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn" id="button-job">Enviar <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Invernaderos Mesa Grande S.P.R de R.L. 2024</p>
+        </div>
+        <div class="footer-icon">
+            <a href="#prestaciones"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.6363 7.13434V25H14.3637V7.13434L22.3647 15.1353L25 12.5L12.5 0L0 12.5L2.63531 15.1353L10.6363 7.13434Z"
+                        fill="#FFA372" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- El modal -->
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <p>
+                ¡Tu voz importa, incluso en el anonimato! <br>
+                Denunciar de manera anónima es un acto valiente que puede marcar la diferencia. Tu integridad y
+                bienestar son fundamentales, y denunciar situaciones injustas, abusivas o ilegales en tu entorno laboral
+                es un paso crucial para construir un ambiente más seguro y justo.
+                No subestimes el impacto de tu testimonio. Tu valentía puede inspirar a otros a hacer lo mismo y
+                contribuir a la construcción de un entorno laboral donde reine la equidad y el respeto. ¡Tu silencio
+                nunca debería ser más fuerte que tu voz! <br>
+                Llama al : 000 000 00 00 <br>
+
+            </p>
+
+            <button onclick="cerrarModal()"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar el modal
+        function mostrarModal() {
+            document.getElementById('miModal').style.display = 'flex';
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            document.getElementById('miModal').style.display = 'none';
+        }
+
+        // Asociar la función mostrarModal al clic del botón
+        document.getElementById('miBoton').addEventListener('click', mostrarModal);
+    </script>
+
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--CDN-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--JavaScript -->
+    <script src="api/jobmail.js"></script>
+    <script src="api/index.js"></script>
+</body>
+
+</html>
+
