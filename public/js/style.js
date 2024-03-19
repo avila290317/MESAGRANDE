@@ -1,12 +1,3 @@
-/*FUNCION PARA (H3 SPAN) EN EL HOME*/
-var typed = new Typed('.text', {
-  strings: ["EL MEJOR SABOR", "LA MEJOR CALIDAD", "EL MEJOR PRECIO"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
-  loop: true
-});
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -17,6 +8,7 @@ menuIcon.onclick = () => {
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+
 
 
 //Funcion para que el ACTIVE se ponga dependiendo la section donde estamos
@@ -53,6 +45,15 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 
 }
+
+/*FUNCION PARA (H3 SPAN) EN EL HOME*/
+var typed = new Typed('.text', {
+  strings: ["EL MEJOR SABOR", "LA MEJOR CALIDAD", "EL MEJOR PRECIO"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
+});
 
 $(function () {
   $('.carousel').slick({

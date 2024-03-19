@@ -46,7 +46,7 @@ app.post('/sendJobMail', (req, res) => {
   if (proyecto == "calvillo") {
     emailAEnviar = "avilahernandeznatalia123@gmail.com";
   } else if (proyecto == "california") {
-    emailAEnviar = "ahnatalia@gmail.com";
+    emailAEnviar = "ahnatalia25@gmail.com";
   }
 
   const mailOptions = {
