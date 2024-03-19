@@ -23,10 +23,14 @@ function sendMail(e) {
   } else if (validEmail.test(mail)) {
 
     let _datos = {
+      from: mail,
+      to: "ahnatalia25@gmail.com",
+      text: message,
       name: name,
       phone: phone,
       mail: mail,
-      message:message
+      message:message,
+      pass: "ofpiqbvozxznzqyt"
     }
 
     fetch('http://127.0.0.1:3000/sendmail', {
