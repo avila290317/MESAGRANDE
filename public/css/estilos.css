@@ -87,7 +87,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 2%;
-    background: url(/public/file/prueba.png);
+    background: url(file/prueba.png);
     background-size: cover;
     background-position: center;
     justify-content: center;
