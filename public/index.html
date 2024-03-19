@@ -24,7 +24,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M2 4H18C19.104 4 20 3.105 20 2C20 0.895 19.105 0 18 0H2C0.895 0 0 0.895 0 2C0 3.105 0.895 4 2 4ZM18 8H2C0.895 8 0 8.895 0 10C0 11.105 0.895 12 2 12H18C19.104 12 20 11.105 20 10C20 8.895 19.105 8 18 8ZM18 16H2C0.895 16 0 16.895 0 18C0 19.105 0.895 20 2 20H18C19.104 20 20 19.105 20 18C20 16.895 19.105 16 18 16Z"
-                  fill="#EDEDED" />
+                    fill="#EDEDED" />
             </svg>
         </div>
 
@@ -179,7 +179,7 @@
             </div>
         </div>
     </section>
-    
+
     <!--CAROUSEL-->
     <div class="carousel">
         <div class="carousel-content">
@@ -428,13 +428,71 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('submit', sendMail);
+
+        function sendMail(e) {
+            e.preventDefault();
+            let name = document.getElementById('name').value;
+            let phone = document.getElementById('phone').value;
+            let mail = document.getElementById('email').value;
+            let message = document.getElementById('mensaje').value;
+            var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+
+            if (name == '') {
+                alert('Te falta agregar un nombre');
+                return;
+            } else if (mail == '') {
+                alert('Te falta agregar un correo');
+                return;
+            } else if (phone == '') {
+                alert('Te falta agregar un telefono');
+                return;
+            } else if (message == '') {
+                alert('Te falta agregar un mensaje');
+                return;
+            } else if (validEmail.test(mail)) {
+
+                let _datos = {
+                    from: mail,
+                    to: "ahnatalia25@gmail.com",
+                    text: message,
+                    name: name,
+                    phone: phone,
+                    mail: mail,
+                    message: message,
+                    pass: "ofpiqbvozxznzqyt"
+                }
+
+                fetch('http://127.0.0.1:3000/sendmail', {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(_datos)
+                })
+                    .then(response => response.text())
+                    .then(res => {
+                        console.log(res);
+                        alert("Se envió el correo, gracias!!!");
+                        document.getElementById('form').reset();
+                    })
+                    .catch(err => console.log(err));
+            } else {
+                console.log('Correo no valido');
+                alert('Correo no valido');
+                return;
+            }
+        }
+    </script>
+
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--CDN-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--JavaScript -->
     <script src="/index.js"></script>
-    <script src="api/sendmail.js"></script>
+    <script src="api/sendmail.js"></script> <!--ULTIMA MODIFICACION LA HICE EN ESTAS LIGAS-->
     <script src="js/style.js"></script>
 </body>
 
