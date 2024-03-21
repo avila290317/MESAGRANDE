@@ -137,7 +137,7 @@ section {
 .solicitudes {
     text-align: center;
     padding: 50px 20px;
-    background-image: url(file/tomateMG.jpg);
+    background-image: url(../file/tomateMG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: contain;
