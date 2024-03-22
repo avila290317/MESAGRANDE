@@ -585,6 +585,11 @@ section {
     font-size: 1.5rem;
 }
 
+.footer-text p a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
 .footer-icon a {
     position: relative;
     display: inline-flex;
