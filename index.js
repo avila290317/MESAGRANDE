@@ -9,8 +9,12 @@ const port = 3000;
 // app.use(express.static('public')); 
 
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+
+app.use(express.json())
+//decodifica la informacion y la convierte en formato json//
+app.use(express.urlencoded({extended:true}));
 
 // Configura nodemailer con tus detalles SMTP
 const transporter = nodemailer.createTransport({
