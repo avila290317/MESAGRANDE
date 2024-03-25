@@ -4,8 +4,7 @@
   "description": "Invernaderos Mesa Grande",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "npm start"
+    "start": "node index.js"
   },
   "author": "Natalia Avila Hernandez",
   "license": "ISC",
