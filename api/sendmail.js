@@ -33,7 +33,7 @@ function sendMail(e) {
       pass: "ofpiqbvozxznzqyt"
     }
 
-    fetch('http://127.0.0.1:3000/api/sendmail', {
+    fetch('http://127.0.0.1:3000/sendmail', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
